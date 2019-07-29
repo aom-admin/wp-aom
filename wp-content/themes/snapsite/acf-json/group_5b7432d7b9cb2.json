@@ -1,0 +1,264 @@
+{
+    "key": "group_5b7432d7b9cb2",
+    "title": "Contact (template)",
+    "fields": [
+        {
+            "key": "field_5b745577ec612",
+            "label": "Text",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b745654ceaff",
+            "label": "Contact Title (top)",
+            "name": "contact_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b745584ec613",
+            "label": "Contact Message (bottom)",
+            "name": "contact_message",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b7432de05cbc",
+            "label": "Maps",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b7450455fc7a",
+            "label": "Map Title",
+            "name": "map_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b7432e705cbd",
+            "label": "API Key",
+            "name": "api_key",
+            "type": "text",
+            "instructions": "Go to \"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\", click \"Get Started\" button. If you need assistance, please contact SnapShot Interactive to set this up for you.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b7434c5530c9",
+            "label": "Latitude",
+            "name": "latitude",
+            "type": "text",
+            "instructions": "Go to https:\/\/www.google.com\/maps, type in the address or name of your business. Once pulled up, look at the URL. The Latitude will be the first set of numbers after the @ symbol. For example, the latitude of SnapShot Interactive is 36.1951353 from the following URL:\r\n\r\nhttps:\/\/www.google.com\/maps\/place\/SnapShot+Interactive\/@36.1951353,-86.7258817,17z\/data=!3m1!4b1!4m5!3m4!1s0x88",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b74370a530ca",
+            "label": "Longitude",
+            "name": "longitude",
+            "type": "text",
+            "instructions": "Go to https:\/\/www.google.com\/maps, type in the address or name of your business. Once pulled up, look at the URL. The Longitude will be the second set of numbers after the @ symbol. For example, the longitude of SnapShot Interactive is -86.7258817 from the following URL:\r\n\r\nhttps:\/\/www.google.com\/maps\/place\/SnapShot+Interactive\/@36.1951353,-86.7258817,17z\/data=!3m1!4b1!4m5!3m4!1s0x88",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b743795b317e",
+            "label": "Zoom Level",
+            "name": "zoom_level",
+            "type": "number",
+            "instructions": "Number between 0 and 20. \r\nThe following list shows the approximate level of detail you can expect to see at each zoom level:\r\n1: World\r\n5: Landmass\/continent\r\n10: City\r\n15: Streets\r\n20: Buildings",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": 20,
+            "step": ""
+        },
+        {
+            "key": "field_5b74502a5fc77",
+            "label": "Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b74503a5fc79",
+            "label": "Form Title",
+            "name": "form_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b7450355fc78",
+            "label": "Form Shortcode",
+            "name": "form_shortcode",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b7452ed7cf4f",
+            "label": "Call Us Title",
+            "name": "call_us_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1534350974
+}
