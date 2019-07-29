@@ -14,13 +14,15 @@ function ssi_google_analytics() { ?>
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134607971-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144835204-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-134607971-1');
+
+  gtag('config', 'UA-144835204-1');
 </script>
+
 
 <?php }
 add_action( 'wp_head', 'ssi_google_analytics', 10 );
