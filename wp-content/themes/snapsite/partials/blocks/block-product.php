@@ -1,10 +1,61 @@
 <!-- Get products -->
 <?php
-// TODO add category to get post and filter by category
-$args = array(
-    'post_type' => 'products',
-    'posts_per_page' => -1
-);
+
+if ( get_sub_field('product_item') ) {
+    $post_filter = get_sub_field('product_item');
+    if ( !is_array($post_filter) ) {
+        $post_filter = array($post_filter);
+    }
+    if ( get_sub_field('categories') ) {
+        $category_filter = get_sub_field('categories');
+        if ( !is_array($category_filter) ) {
+            $category_filter = array($category_filter);
+        }   
+        $args = array(
+            'post_type' => 'products',
+            'posts_per_page' => -1,
+            'post__in' => $post_filter,
+            'tax_query' => array(
+                array(
+                  'taxonomy' => 'category',
+                  'terms' => $category_filter,
+                ),
+            ),
+        );
+    } else {
+        $args = array(
+            'post_type' => 'products',
+            'posts_per_page' => -1,
+            'post__in' => $post_filter,
+        );
+    }
+    
+    
+} else {
+    if ( get_sub_field('categories') ) {
+        $category_filter = get_sub_field('categories');
+        if ( !is_array($category_filter) ) {
+            $category_filter = array($category_filter);
+        }   
+        $args = array(
+            'post_type' => 'products',
+            'posts_per_page' => -1,
+            'tax_query' => array(
+                array(
+                  'taxonomy' => 'category',
+                  'terms' => $category_filter,
+                ),
+            ),
+        );
+    } else {
+        $args = array(
+            'post_type' => 'products',
+            'posts_per_page' => -1,
+        );
+    }
+}
+
+
  
 $my_query = new WP_Query( $args );
  

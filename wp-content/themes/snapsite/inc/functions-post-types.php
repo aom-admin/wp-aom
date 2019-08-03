@@ -67,7 +67,8 @@ function snapsite_post_type_product() {
     'hierarchical'        => false,
     'menu_position'       => null,
     'supports'            => array( 'title', 'editor', 'thumbnail'),
-    'menu_icon'           => 'dashicons-edit'
+    'menu_icon'           => 'dashicons-edit',
+    'taxonomies'          => array( 'category' )
   );
   register_post_type( 'products', $args );
 }
