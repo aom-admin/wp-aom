@@ -70,7 +70,7 @@ $zoom_level = get_field('zoom_level');
 
       <p class="address"><?php echo $address; ?></p>
     </div><!--cell-->
-     <div class="small-12 medium-7 column">
+     <div class="small-12 medium-7 column contact-form-container">
       <?php
       $form_title = get_field('form_title');
       if(!empty($form_title)) :
@@ -81,15 +81,17 @@ $zoom_level = get_field('zoom_level');
       <?php
       $form_shortcode = get_field('form_shortcode');
       echo do_shortcode($form_shortcode); ?>
-      <?php
-      $call_us_title = get_field('call_us_title');
-      if(!empty($call_us_title)) :
-        echo '<h4>' . $call_us_title . '</h4>';
-      else :
-        echo '<h4>Call Us</h4>';
-      endif;
-      $phone = get_field('phone','option'); ?>
-      <a href="tel:<?php echo $phone; ?>" class="phone"><?php echo $phone; ?></a>
+      <div class="call-us-wrapper">      
+        <?php
+        $call_us_title = get_field('call_us_title');
+        if(!empty($call_us_title)) :
+          echo '<h4>' . $call_us_title . '</h4>';
+        else :
+          echo '<h4>Call Us</h4>';
+        endif;
+        $phone = get_field('phone','option'); ?>
+        <a href="tel:<?php echo $phone; ?>" class="phone"><?php echo $phone; ?></a>
+      </div>
     </div><!--cell-->
   </div><!--row-->
   <?php
