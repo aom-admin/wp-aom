@@ -2636,12 +2636,20 @@ textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .product-wrapper .product-item-wrapper {
   flex: 0 1 auto;
-  width: 50%;
-  padding: 25px;
+  width: calc(50% - 20px);
+  padding: 10px;
+  margin: 10px;
+}
+
+.product-wrapper .product-item-wrapper:hover h3 {
+  /* TODO - maybe hover state */
+  /* color: #ee1d24; */
 }
 
 .product-wrapper .product-item {
@@ -2651,7 +2659,7 @@ textarea {
 }
 
 .product-wrapper .product-item h3 {
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .product-wrapper .product-item .product-img {
@@ -2672,7 +2680,17 @@ textarea {
 
 @media (min-width: 640px) {
   .product-wrapper .product-item-wrapper {
-    width: 33%;
+    width: calc(33% - 20px);
+  }
+
+  .product-wrapper .product-item h3 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-wrapper .product-item-wrapper {
+    width: calc(25% - 20px);
   }
 }
 

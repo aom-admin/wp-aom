@@ -14,13 +14,14 @@ if ( $my_query->have_posts() ) : ?>
  
     while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
         <div class="product-item-wrapper">
-
-            <div class="product-item">
-                <div class="product-img">
-                    <?php the_post_thumbnail(); ?>
+            <a href="<?php the_permalink(); ?>">
+                <div class="product-item">
+                    <div class="product-img">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                    <h3><?php the_title(); ?></h3>
                 </div>
-                <h3><?php the_title(); ?></h3>
-            </div>
+            </a>
         </div>    
     <?php endwhile; ?>
 
