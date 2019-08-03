@@ -35,6 +35,43 @@ function snapsite_post_type_team() {
   register_post_type( 'team', $args );
 }
 
+// Product Post Type
+add_action( 'init', 'snapsite_post_type_product' );
+
+function snapsite_post_type_product() {
+
+  $labels = array(
+    'name'                => _x( 'Products', 'post type general name', 'snapsite' ),
+    'singular_name'       => _x( 'Product', 'post type singular name', 'snapsite' ),
+    'menu_name'           => _x( 'Products', 'admin menu', 'snapsite' ),
+    'name_admin_bar'      => _x( 'Product', 'add new on admin bar', 'snapsite' ),
+    'add_new'             => _x( 'Add New', 'location', 'snapsite' ),
+    'add_new_item'        => __( 'Add New Product', 'snapsite' ),
+    'new_item'            => __( 'New Product', 'snapsite' ),
+    'edit_item'           => __( 'Edit Product', 'snapsite' ),
+    'view_item'           => __( 'View Product', 'snapsite' ),
+    'all_items'           => __( 'All Products', 'snapsite' ),
+    'search_items'        => __( 'Search Products', 'snapsite' ),
+    'parent_item_colon'   => __( 'Parent Products:', 'snapsite' ),
+    'not_found'           => __( 'No Products found.', 'snapsite' ),
+    'not_found_in_trash'  => __( 'No Products found in Trash.', 'snapsite' )
+  );
+  $args = array(
+    'labels'              => $labels,
+    'description'         => __( 'Description.', 'editor', 'snapsite' ),
+    'public'              => true,
+    'publicly_queryable'  => true,
+    'show_ui'             => true,
+    'show_in_menu'        => true,
+    'has_archive'         => false,
+    'hierarchical'        => false,
+    'menu_position'       => null,
+    'supports'            => array( 'title', 'editor', 'thumbnail'),
+    'menu_icon'           => 'dashicons-edit'
+  );
+  register_post_type( 'products', $args );
+}
+
 // // Event Post Type
 // add_action( 'init', 'snapsite_post_type_event' );
 
