@@ -61,7 +61,7 @@ $my_query = new WP_Query( $args );
  
 if ( $my_query->have_posts() ) : ?>
 
-    <?php echo '<div class="product-wrapper">';
+    <?php echo '<div class="product-wrapper row">';
  
     while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
         <div class="product-item-wrapper">

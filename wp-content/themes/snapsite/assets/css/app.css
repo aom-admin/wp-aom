@@ -2660,9 +2660,10 @@ textarea {
 
 .product-wrapper .product-item-wrapper {
   flex: 0 1 auto;
-  width: calc(50% - 20px);
-  padding: 10px;
-  margin: 10px;
+  width: calc(50% - 40px);
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
 }
 
 .product-wrapper .product-item-wrapper:hover h3 {
@@ -2672,7 +2673,6 @@ textarea {
 
 .product-wrapper .product-item {
   width: 100%;
-  max-width: 200px;
   margin: auto;
 }
 
@@ -2690,6 +2690,8 @@ textarea {
 .product-wrapper .product-item img {
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
   width: auto;
   max-width: none;
@@ -2698,7 +2700,7 @@ textarea {
 
 @media (min-width: 640px) {
   .product-wrapper .product-item-wrapper {
-    width: calc(33% - 20px);
+    width: calc(33% - 40px);
   }
 
   .product-wrapper .product-item h3 {
@@ -2708,7 +2710,7 @@ textarea {
 
 @media (min-width: 1024px) {
   .product-wrapper .product-item-wrapper {
-    width: calc(25% - 20px);
+    width: calc(25% - 40px);
   }
 }
 
