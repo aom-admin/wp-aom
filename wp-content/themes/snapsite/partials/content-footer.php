@@ -65,7 +65,7 @@
   </div><!--columns-->
   <div class="small-12 medium-6 large-4 columns text-right">
     <a href="" class="snapshot-logo" target="_blank">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/aom-logo-white.png">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/aom-logo-white.png" alt="AOM Logo">
     </a>
 
   </div><!-- .columns -->
