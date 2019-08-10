@@ -2647,7 +2647,7 @@ textarea {
 
 /* Start Bernstein Website Updates */
 
-/********** Products Style  **********/
+/********** Products Grid Style  **********/
 
 
 .product-wrapper {
@@ -2663,12 +2663,12 @@ textarea {
   width: calc(50% - 40px);
   margin: 20px;
   padding-bottom: 10px;
+  transition: all 0.25s ease;
   border-bottom: 1px solid gainsboro;
 }
 
-.product-wrapper .product-item-wrapper:hover h3 {
-  /* TODO - maybe hover state */
-  /* color: #ee1d24; */
+.product-wrapper .product-item-wrapper:hover {
+  border-bottom: 1px solid #ee1d24;
 }
 
 .product-wrapper .product-item {
@@ -2710,7 +2710,26 @@ textarea {
 
 @media (min-width: 1024px) {
   .product-wrapper .product-item-wrapper {
-    width: calc(25% - 40px);
+    width: calc(25% - 64px);
+    margin: 32px;
+  }
+}
+
+/********** Product Page Styles **********/
+
+.product-item-pages {
+  margin: 48px 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .single .product-item-pages .entry-thumb {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-item-pages .sidebar-right {
+    padding-left: 56px;
   }
 }
 

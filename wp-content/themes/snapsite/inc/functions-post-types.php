@@ -70,7 +70,7 @@ function snapsite_post_type_product() {
     'menu_icon'           => 'dashicons-edit',
     'taxonomies'          => array( 'category' )
   );
-  register_post_type( 'products', $args );
+  register_post_type( 'product', $args );
 }
 
 // // Event Post Type

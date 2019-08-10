@@ -12,7 +12,7 @@ if ( get_sub_field('product_item') ) {
             $category_filter = array($category_filter);
         }   
         $args = array(
-            'post_type' => 'products',
+            'post_type' => 'product',
             'posts_per_page' => -1,
             'post__in' => $post_filter,
             'tax_query' => array(
@@ -24,7 +24,7 @@ if ( get_sub_field('product_item') ) {
         );
     } else {
         $args = array(
-            'post_type' => 'products',
+            'post_type' => 'product',
             'posts_per_page' => -1,
             'post__in' => $post_filter,
         );
@@ -38,7 +38,7 @@ if ( get_sub_field('product_item') ) {
             $category_filter = array($category_filter);
         }   
         $args = array(
-            'post_type' => 'products',
+            'post_type' => 'product',
             'posts_per_page' => -1,
             'tax_query' => array(
                 array(
@@ -49,7 +49,7 @@ if ( get_sub_field('product_item') ) {
         );
     } else {
         $args = array(
-            'post_type' => 'products',
+            'post_type' => 'product',
             'posts_per_page' => -1,
         );
     }
