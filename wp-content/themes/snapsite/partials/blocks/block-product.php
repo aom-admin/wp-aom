@@ -79,6 +79,7 @@ if ( $my_query->have_posts() ) : ?>
     <?php echo '</div>'; ?>
  
 <?php endif; ?>
+<?php wp_reset_postdata(); ?>
     
     <!-- loop over categories and get products that have them -->
 
