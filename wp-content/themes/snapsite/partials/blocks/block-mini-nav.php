@@ -1,6 +1,5 @@
 <!-- Get Mini Nav Items -->
 
-<p> here it is</p>
 <?php 
 $nav_group = get_sub_field('nav_group');
 
@@ -57,8 +56,7 @@ if( $nav_group ) : ?>
             
     </div>
     <?php endwhile; ?>
-    <?php ?>
-    <?php ?>
+    <?php wp_reset_postdata(); ?>
     
 
 
