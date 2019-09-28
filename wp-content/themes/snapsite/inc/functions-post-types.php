@@ -66,7 +66,7 @@ function snapsite_post_type_product() {
     'has_archive'         => false,
     'hierarchical'        => false,
     'menu_position'       => null,
-    'supports'            => array( 'title', 'editor', 'thumbnail'),
+    'supports'            => array( 'title', 'editor', 'thumbnail', 'page-attributes'),
     'menu_icon'           => 'dashicons-edit',
     'taxonomies'          => array( 'category' )
   );
