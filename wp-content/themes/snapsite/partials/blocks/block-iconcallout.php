@@ -2,7 +2,7 @@
 
 <?php 
 $callouts = get_sub_field('callouts');
-
+$margin = get_sub_field('callout_margin');
 
 if( $callouts ) : 
     $count = count(get_sub_field('callouts'));
@@ -16,7 +16,11 @@ if( $callouts ) :
 ?>
     
 
-    <div class="callout-wrapper columns flex-by-<?php echo $count ?>">
+    <div class="callout-wrapper columns flex-by-<?php echo $count ?>"
+    <?php if ( $margin > 0) : ?>
+    style="margin: <?php echo $margin; ?>px 0px;"
+    <?php endif; ?>
+    > 
         <div class="row">
         <?php while ( have_rows('callouts') ) :
             echo '<div class="callout-item-wrapper">';
@@ -54,7 +58,9 @@ if( $callouts ) :
                 $link_url = $link['url'];
                 $link_title = $link['title'];
                 $link_target = $link['target'] ? $link['target'] : '_self';?>
-                <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                <div class="button-wrapper">
+                    <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                </div>
             <?php endif; ?>
             </div>
         <?php endwhile; ?>

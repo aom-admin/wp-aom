@@ -2648,6 +2648,7 @@ textarea {
   width: 100%;
   z-index: 9;
   background: white;
+  border-bottom: 1px solid #2a2723;
 }
 
 header.sticky-nav ~ #site-content {
@@ -2821,6 +2822,7 @@ header.sticky-nav ~ #site-content {
 .mini-nav-wrapper .group-content li {
   border-bottom: 1px solid gainsboro;
   margin-right: 16px;
+  margin-top: 3px;
 }
 
 .mini-nav-wrapper .group-content li:hover {
@@ -2849,7 +2851,7 @@ header.sticky-nav ~ #site-content {
 }
 @media (min-width: 1024px) {
   .mini-nav-wrapper {
-    padding: 0 24px;
+    padding: 0;
   }
 }
 
@@ -2857,7 +2859,7 @@ header.sticky-nav ~ #site-content {
 
 .callout-wrapper {
   background-color: #f4f4f4;
-  padding: 0 50px 50px;
+  padding: 0 25px 25px;
 }
 
 .callout-wrapper .row {
@@ -2867,16 +2869,14 @@ header.sticky-nav ~ #site-content {
 }
 
 .callout-wrapper .icon {
-  width: 160px;
-  height: 160px;
+  height: 100px;
   margin: auto;
   margin-bottom: 30px;
-  padding-bottom: 50%;
   position: relative;
 }
 
 .callout-wrapper .icon img {
-  max-width: 160px;
+  max-width: 100px;
   text-align: center;
   position: absolute;
   top: 0;
@@ -2899,6 +2899,7 @@ header.sticky-nav ~ #site-content {
   min-height: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .callout-item-wrapper .callout-head {
@@ -2906,7 +2907,6 @@ header.sticky-nav ~ #site-content {
 }
 
 .callout-wrapper .button {
-  max-width: 296px;
   height: auto;
   width: auto;
   align-items: center;
@@ -2916,7 +2916,7 @@ header.sticky-nav ~ #site-content {
 
 .callout-wrapper .callout-item-wrapper {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .callout-wrapper.flex-by-3 .callout-item-wrapper:nth-of-type(3n) {
@@ -2924,24 +2924,43 @@ header.sticky-nav ~ #site-content {
 }
 
 @media (min-width: 640px) {
+  .callout-wrapper .button {
+    max-width: 296px;
+  }
+
   .callout-wrapper .row {
     flex-direction: row;
   }
 
+  .callout-wrapper .callout-item-wrapper {
+    width: 100%;
+    margin-top: 25px;
+  }
   .callout-wrapper.flex-by-2 .callout-item-wrapper,
   .callout-wrapper.flex-by-3 .callout-item-wrapper {
-    width: calc(50% - 25px);
+    width: calc(50% - 15px);
   }
 
   .callout-wrapper.flex-by-2 .callout-item-wrapper:nth-of-type(odd),
   .callout-wrapper.flex-by-3 .callout-item-wrapper:nth-of-type(odd) {
-    margin-right: 50px;
+    margin-right: 25px;
   }
 }
 
 @media (min-width: 992px) {
+  .callout-wrapper {
+    padding: 0 50px 50px;
+  }
+
+  .callout-wrapper .callout-item-wrapper {
+    margin-top: 50px;
+  }
   .callout-wrapper.flex-by-3 .callout-item-wrapper {
     width: calc(33.33333% - 34px);
+    margin-right: 50px;
+  }
+  .callout-wrapper.flex-by-2 .callout-item-wrapper:nth-of-type(odd),
+  .callout-wrapper.flex-by-3 .callout-item-wrapper:nth-of-type(odd) {
     margin-right: 50px;
   }
 

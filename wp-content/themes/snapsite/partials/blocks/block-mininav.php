@@ -2,11 +2,15 @@
 
 <?php 
 $nav_group = get_sub_field('nav_group');
-
+$margin = get_sub_field('nav_margin');
 
 if( $nav_group ) : ?>
 
-    <?php echo '<div class="mini-nav-wrapper row">'; ?>
+    <div class="mini-nav-wrapper row"
+    <?php if ( $margin > 0) : ?>
+    style="margin: <?php echo $margin; ?>px 0px;"
+    <?php endif; ?>
+    > 
 
     <?php while ( have_rows('nav_group') ) :
             echo '<div class="nav-group-wrapper">';
