@@ -2778,10 +2778,27 @@ header.sticky-nav ~ #site-content {
 }
 
 .mini-nav-wrapper .group-label a {
+  position: relative;
+  display: block;
   width: auto;
-  display: inline-block;
   color: #2a2723;
   font-weight: 900;
+  font-size: 22px;
+}
+
+.mini-nav-wrapper .group-label a i {
+  border: solid #ee1d24;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin: 0 0 2px 5px;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: all 0.25s ease-in-out;
+}
+
+.mini-nav-wrapper .group-label a:hover i {
+  margin-left: 15px;
 }
 
 .mini-nav-wrapper .group-content {
@@ -2823,10 +2840,16 @@ header.sticky-nav ~ #site-content {
 @media (min-width: 640px) {
   .mini-nav-wrapper {
     flex-direction: row;
+    padding: 0 24px;
   }
 
   .mini-nav-wrapper .nav-group-wrapper {
     width: 50;
+  }
+}
+@media (min-width: 1024px) {
+  .mini-nav-wrapper {
+    padding: 0 24px;
   }
 }
 
