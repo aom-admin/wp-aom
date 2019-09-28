@@ -2629,6 +2629,10 @@ textarea {
   margin: 60px 0;
 }
 
+main ~ * :focus {
+  outline: none;
+}
+
 /* One Column added border option */
 .one-column .row.with-border {
   padding: 40px 0;
@@ -2664,10 +2668,13 @@ header.sticky-nav ~ #site-content {
   .double-col-buttons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .double-col-buttons .button {
     width: 48%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
