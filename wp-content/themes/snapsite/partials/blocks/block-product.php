@@ -12,21 +12,25 @@ if ( get_sub_field('product_item') ) {
             $category_filter = array($category_filter);
         }   
         $args = array(
-            'post_type' => 'product',
-            'posts_per_page' => -1,
-            'post__in' => $post_filter,
+            'post_type'         => 'product',
+            'posts_per_page'    => -1,
+            'post__in'          => $post_filter,
+            'orderby'           => 'menu_order',
+            'order'             => 'DESC',
             'tax_query' => array(
                 array(
-                  'taxonomy' => 'category',
-                  'terms' => $category_filter,
+                  'taxonomy'    => 'category',
+                  'terms'       => $category_filter,
                 ),
             ),
         );
     } else {
         $args = array(
-            'post_type' => 'product',
-            'posts_per_page' => -1,
-            'post__in' => $post_filter,
+            'post_type'         => 'product',
+            'posts_per_page'    => -1,
+            'post__in'          => $post_filter,
+            'orderby'           => 'menu_order',
+            'order'             => 'DESC',
         );
     }
     
@@ -38,19 +42,23 @@ if ( get_sub_field('product_item') ) {
             $category_filter = array($category_filter);
         }   
         $args = array(
-            'post_type' => 'product',
-            'posts_per_page' => -1,
+            'post_type'         => 'product',
+            'posts_per_page'    => -1,
+            'orderby'           => 'menu_order',
+            'order'             => 'DESC',
             'tax_query' => array(
                 array(
-                  'taxonomy' => 'category',
-                  'terms' => $category_filter,
+                  'taxonomy'    => 'category',
+                  'terms'       => $category_filter,
                 ),
             ),
         );
     } else {
         $args = array(
-            'post_type' => 'product',
-            'posts_per_page' => -1,
+            'post_type'         => 'product',
+            'orderby'           => 'menu_order',
+            'order'             => 'DESC',
+            'posts_per_page'    => -1,
         );
     }
 }

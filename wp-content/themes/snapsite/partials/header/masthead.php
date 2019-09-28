@@ -1,4 +1,8 @@
-<header id="header-layout" class="masthead" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+<header id="header-layout" class="masthead
+<?php if( get_field('sticky_nav', 'option') ): ?>
+sticky-nav	
+<?php endif; ?>
+" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
   <div class="row">
 
     <div class="small-9 medium-5 large-4 columns">

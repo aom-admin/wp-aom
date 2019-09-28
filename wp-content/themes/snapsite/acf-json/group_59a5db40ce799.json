@@ -162,6 +162,26 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5d859b54b086b",
+            "label": "Padding",
+            "name": "heading-padding",
+            "type": "range",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 200,
+            "min": "",
+            "max": 400,
+            "step": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -174,12 +194,12 @@
         ]
     ],
     "menu_order": 0,
-    "position": "acf_after_title",
+    "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534255710
+    "modified": 1569037329
 }

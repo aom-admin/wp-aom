@@ -1,4 +1,4 @@
-<section class="one-column padded extra" role="region">
+<section class="one-column new-padded" role="region">
   <?php
   if ( get_sub_field('section_heading') ) {
     echo '<div class="row column">';

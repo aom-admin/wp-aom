@@ -212,6 +212,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5d86b3d0d36c6",
+                            "label": "Border Color",
+                            "name": "border_color",
+                            "type": "text",
+                            "instructions": "Enter color or hex code for border around one column content on larger screens",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_59a5c95b9148e",
                             "label": "Content",
                             "name": "content",
@@ -1035,5 +1054,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567553150
+    "modified": 1569155752
 }

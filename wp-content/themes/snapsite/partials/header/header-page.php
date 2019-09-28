@@ -27,7 +27,12 @@
 
   <?php endif; ?>
   <div class="overlay"></div>
-  <div class="header-container">
+  <div class="header-container" 
+  <?php if ( get_field('heading-padding') ) : ?>
+    <?php $padding = get_field('heading-padding'); ?>
+    style="padding: <?php echo $padding; ?>px 0px;"
+  <?php endif; ?>
+  > 
     <div class="row">
       <div class="medium-10 large-9 medium-centered columns">
 

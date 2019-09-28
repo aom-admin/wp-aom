@@ -73,6 +73,25 @@
             "default_value": ""
         },
         {
+            "key": "field_5d87724c2636a",
+            "label": "Sticky Nav",
+            "name": "sticky_nav",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_59a5d861c3a8f",
             "label": "Contact",
             "name": "",
@@ -353,5 +372,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534792186
+    "modified": 1569157772
 }
