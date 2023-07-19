@@ -15,7 +15,6 @@ style="margin: <?php echo $margin; ?>px auto;"
 <?php while ( have_rows('nav_group') ) :
         echo '<div class="nav-group-wrapper">';
         the_row();
-        $i++;
         ?>
 
         <!-- Group Label -->

@@ -212,25 +212,6 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d86b3d0d36c6",
-                            "label": "Border Color",
-                            "name": "border_color",
-                            "type": "text",
-                            "instructions": "Enter color or hex code for border around one column content on larger screens",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
                             "key": "field_59a5c95b9148e",
                             "label": "Content",
                             "name": "content",
@@ -765,53 +746,309 @@
                 },
                 "layout_5d3f8cf43cff6": {
                     "key": "layout_5d3f8cf43cff6",
-                    "name": "product",
-                    "label": "Product",
+                    "name": "products",
+                    "label": "Products",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5d3f8d163cff7",
-                            "label": "Product Item",
-                            "name": "product_item",
-                            "type": "post_object",
-                            "instructions": "If no products are selected, the section will show all by default.",
-                            "required": 0,
+                            "label": "Products",
+                            "name": "products",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": [
-                                "products"
-                            ],
-                            "taxonomy": [],
-                            "allow_null": 0,
-                            "multiple": 1,
-                            "return_format": "id",
-                            "ui": 1
-                        },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6485f5094f6cb",
+                                    "label": "Product Name",
+                                    "name": "product_name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6485f55c4f6cf",
+                                    "label": "Product Image",
+                                    "name": "product_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6485f51e4f6cc",
+                                    "label": "Product Description",
+                                    "name": "product_description",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_6485f5364f6cd",
+                                    "label": "Product Brochure",
+                                    "name": "product_brochure",
+                                    "type": "file",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_6485f5494f6ce",
+                                    "label": "Request a Quote Link",
+                                    "name": "request_a_quote_link",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6485f6645bb24": {
+                    "key": "layout_6485f6645bb24",
+                    "name": "hp_products",
+                    "label": "HP Products",
+                    "display": "block",
+                    "sub_fields": [
                         {
-                            "key": "field_5d3fa06e9c87b",
-                            "label": "Category",
-                            "name": "categories",
-                            "type": "taxonomy",
-                            "instructions": "If no product categories are selected, the section will show all by default.",
-                            "required": 0,
+                            "key": "field_6485f6aa5bb25",
+                            "label": "Product SKUs",
+                            "name": "product_skus",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "taxonomy": "category",
-                            "field_type": "checkbox",
-                            "add_term": 1,
-                            "save_terms": 0,
-                            "load_terms": 0,
-                            "return_format": "id",
-                            "multiple": 0,
-                            "allow_null": 0
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6485f6bf5bb26",
+                                    "label": "SKU",
+                                    "name": "sku",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "5",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_649d6ef4ceafb",
+                                    "label": "Override API",
+                                    "name": "override_api",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "5",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_649d6f04ceafc",
+                                    "label": "Product Name",
+                                    "name": "product_name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_649d6ef4ceafb",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_64ab42932ea80",
+                                    "label": "Product Image",
+                                    "name": "product_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_649d6ef4ceafb",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "10",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_64ab42a92ea81",
+                                    "label": "Product Description",
+                                    "name": "product_description",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_649d6ef4ceafb",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                },
+                                {
+                                    "key": "field_64ab42bf2ea82",
+                                    "label": "Product Brochure",
+                                    "name": "product_brochure",
+                                    "type": "file",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_649d6ef4ceafb",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "10",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -940,8 +1177,66 @@
                             "step": "",
                             "prepend": "",
                             "append": ""
+                        },
+                        {
+                            "key": "field_647fe1e4f1fba",
+                            "label": "Override Min Height?",
+                            "name": "override_min_height",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "override": "Override Min Height"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_647fe230f1fbb",
+                            "label": "Min Height",
+                            "name": "min_height",
+                            "type": "text",
+                            "instructions": "Enter min height in px value. Ex: 300px",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_647fe1e4f1fba",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6485c34a82155": {
+                    "key": "layout_6485c34a82155",
+                    "name": "breadcrumb",
+                    "label": "Breadcrumb",
+                    "display": "block",
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -1094,5 +1389,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1569685717
+    "modified": 1688945639
 }
