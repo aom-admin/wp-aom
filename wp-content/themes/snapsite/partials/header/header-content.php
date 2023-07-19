@@ -38,6 +38,10 @@ if ( get_field('page_heading') ) {
 $title = $before_title . $title . $after_title;
 // $title = '<div class="row"><div class="columns medium-8 large-6">' . $title . '</div>';
 
+if ( get_field('pre_heading') ) {
+  $title = '<div class="pre-heading">' . esc_html( get_field('pre_heading') ) . '</div>' . $title;
+}
+
 // Get subtitle
 if ( get_field('page_heading_content') ) {
   $title .= get_field('page_heading_content');

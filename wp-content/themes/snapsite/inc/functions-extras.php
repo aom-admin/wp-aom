@@ -10,7 +10,7 @@ function snapsite_action_before() {
     __( 'You are using an %1$soutdated%2$s browser. Please %3$supgrade your browser%4$s or %5$sactivate Google Chrome Frame%6$s to improve your experience.', 'lifted' ),
     '<strong>', '</strong>',
     '<a href="http://browsehappy.com/" target="_blank" rel="external">', '</a>',
-    '<a href="http://www.google.com/chromeframe/?redirect=true" target="_blank" rel="external">', '</a>'
+    '<a href="https://www.google.com/chromeframe/?redirect=true" target="_blank" rel="external">', '</a>'
   );
   $ie_notice .= '</p>';
   $ie_notice .= "\r\n<![endif]-->\r\n";

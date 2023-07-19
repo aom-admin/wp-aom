@@ -1,4 +1,4 @@
-      </div><!-- #site-content -->
+</div><!-- #site-content -->
 
       <footer id="footer-layout" class="site-footer" role="contentinfo">
 
