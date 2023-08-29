@@ -35,9 +35,7 @@ jQuery(document).ready(function($) {
     $(this).children('.sub-menu').slideUp();
   }
 
-
-  $(".top-nav .menu-item-has-children").hoverIntent( showMenu, hideMenu );
-
+  $(".top-nav > .menu-item-has-children").hoverIntent( showMenu, hideMenu );
 
 
 // End jQuery no-conflict mode

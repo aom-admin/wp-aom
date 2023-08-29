@@ -49,6 +49,24 @@ style="margin: <?php echo $margin; ?>px auto;"
                 ?>
                 <li class="nav-item">
                     <a href="<?php echo esc_url($nav_item_link_url); ?>" target="<?php echo esc_attr($nav_item_link_target); ?>"><?php echo esc_html($nav_item_link_title); ?></a>
+                    <?php if( have_rows('sub_nav_items') ): ?>
+                    <ul class="sub-nav">
+                    <?php while( have_rows('sub_nav_items') ): the_row();
+                    
+                    $sub_nav_item_link = get_sub_field('sub_nav_item');
+                    if( $sub_nav_item_link ): 
+                        $sub_nav_item_link_url = $sub_nav_item_link['url'];
+                        $sub_nav_item_link_title = $sub_nav_item_link['title'];
+                        $sub_nav_item_link_target = $sub_nav_item_link['target'] ? $sub_nav_item_link['target'] : '_self';
+                        ?>
+                        <li class="sub-nav-item">
+                            <a href="<?php echo esc_url($sub_nav_item_link_url); ?>" target="<?php echo esc_attr($sub_nav_item_link_target); ?>"><?php echo esc_html($sub_nav_item_link_title); ?></a>
+                        </li>
+                    <?php endif; ?>
+
+                    <?php endwhile; ?>
+                    </ul>
+                    <?php endif; ?>
                 </li>
             <?php endif; ?>
                 

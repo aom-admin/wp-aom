@@ -2712,11 +2712,7 @@ header.sticky-nav ~ #site-content {
 .product-list-item-wrapper {
   width: 100%;
   padding: 40px 40px 0 40px;
-}
-
-/* make odd item-wrappers grey bg */
-.product-list-item-wrapper:nth-child(even) {
-  background: rgba(211,211,211, 0.2);
+  border-bottom: 3px solid rgba(211,211,211, 0.5);
 }
 
 @media (min-width: 992px) {
@@ -2981,6 +2977,15 @@ header.sticky-nav ~ #site-content {
     width: calc(30%);
   }
 
+}
+
+/* Nav updates to allow for sub-sub-nav */
+ul.sub-menu ul.sub-menu {
+  top: 0px;
+  left: -10px;
+  padding-left: 20px;
+  position: relative;
+  display: block !important;
 }
 
 /* End Bernstein Website Updates */
